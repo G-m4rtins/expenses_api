@@ -10,8 +10,8 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "transactions")
-public class transactions implements Serializable {
+@Table(name = "Transactions")
+public class Transactions implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -27,7 +27,7 @@ public class transactions implements Serializable {
 
     private Long userId;
 
-    public transactions(String description, BigDecimal value, EnumsType type, EnumsCategory category, LocalDate date, Long userId) {
+    public Transactions(String description, BigDecimal value, EnumsType type, EnumsCategory category, LocalDate date, Long userId) {
         this.description = description;
         this.value = value;
         this.type = type;
@@ -36,7 +36,7 @@ public class transactions implements Serializable {
         this.userId = userId;
     }
 
-    public transactions() {
+    public Transactions() {
     }
 
     public Long getId() {
